@@ -1,1 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
 
+body  {
+    background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+  background-size:cover;
+        -webkit-animation: slidein 100s;
+        animation: slidein 100s;
+
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;              
+}
+
+@-webkit-keyframes slidein {
+from {background-position: top; background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+}
+
+@keyframes slidein {
+from {background-position: top;background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+
+}
+    .container {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+
+.add-task input[type="text"] {
+    width: 70%;
+    padding: 10px;
+}
+
+@media (max-width: 500px) {
+.add-task input[type="text"] {
+    width: 67%;
+    padding: 10px;
+}	
+}
+
+
+.add-task button {
+  padding: 10px 8px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.task-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.delete-btn{
+background: transparent;
+border: none;
+color: red;
+}
+.todo-ico{
+width:35px;
+}
+.todo{
+display: flex;
+    justify-content: center;
+}
